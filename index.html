@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/Date.js"></script>
+</head>
+<body>
+<script>
+    function display() {
+        let dates = new Date(2,2,2007);
+        let day = dates.getDay();
+        let month = dates.getMonth();
+        let year = dates.getYear();
+        alert(day + "/" + month + "/" + year);
+        dates.setDay(10);
+        day = dates.getDay()
+        alert(day + "/" + month + "/" + year);
+    }
+    main()
+</script>
+<button type="button" onclick="display()">click me</button>
+</body>
+</html>
